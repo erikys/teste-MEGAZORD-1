@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Lista De Conta";
+}
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class=" btn btn-primary" role="button" asp-controller="contato" asp-action="criar">Adicionar novo contato</a>
+
+    </div>
+    <br />
+
+    <h1 class="display-4">Listagem de contatos</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">nome</th>
+                <th scope="col">email</th>
+                <th scope="col">cpf</th>
+                <th scope="col">celular</th>
+                <th scope="col">celular 2</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <th>Joao</th>
+                <td>Joao@gmail.com</td>
+                <td>123.456.789.00</td>
+                <td>12 995652341</td>
+                <td>opicional</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="contato" asp-action="editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="contato" asp-action="ApagarComfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <th>Lucas</th>
+                <td>Lucas@gmail.com</td>
+                <td>123.456.789.00</td>
+                <td>12 995652341</td>
+                <td>opicional</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="contato" asp-action="editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="contato" asp-action="ApagarComfirmacao">apagar</a>
+                    </div>
+                </td>
+
+
+
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <th>Luis</th>
+                <td>Luis@gmail.com</td>
+                <td>123.456.789.00</td>
+                <td>12 995652341</td>
+                <td>opicional</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="contato" asp-action="editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="contato" asp-action="ApagarComfirmacao">apagar</a>
+                    </div>
+                </td>
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
